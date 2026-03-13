@@ -5,7 +5,7 @@ INSERT INTO ai_job_market
 (10346,'AI Engineer','Startup','Education','Turkey','Hybrid','Mid',2,'Master',1,1,1,1,1,70000,2,2023,'High',1);
 
 CREATE OR REPLACE TASK ai_job_market_task
-WAREHOUSE=compute_wh
+WAREHOUSE=compute_wh,
 SCHEDULE='5 MINUTE'
 AS
   INSERT INTO ai_job_market_clean
