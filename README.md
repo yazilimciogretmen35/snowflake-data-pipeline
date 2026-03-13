@@ -86,5 +86,6 @@ This query calculates the average salary for different AI-related job roles.
 ## Author
 
 Metin
+
 SQL | Snowflake | Data Analytics | Data Pipelines
 
