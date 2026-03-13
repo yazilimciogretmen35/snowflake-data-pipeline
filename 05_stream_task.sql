@@ -2,7 +2,7 @@ CREATE OR REPLACE STREAM ai_jobs_stream
 ON TABLE ai_job_market;
 
 INSERT INTO ai_job_market
-(10346,'AI Engineer','Startup','Education','Turkey','Hybrid','Mid',2,'Master',1,1,1,1,1,70000,2,2023,'High'1);
+(10346,'AI Engineer','Startup','Education','Turkey','Hybrid','Mid',2,'Master',1,1,1,1,1,70000,2,2023,'High',1);
 
 CREATE OR REPLACE TASK ai_job_market_task
 Warehouse=compute_wh
