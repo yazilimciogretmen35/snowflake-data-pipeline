@@ -10,7 +10,7 @@ The pipeline loads a CSV dataset into Snowflake, performs data cleaning and tran
 
 The goal of this project is to showcase how modern data pipelines can be implemented using Snowflake SQL features such as stages, streams, and tasks.
 
----
+
 
 ## Technologies Used
 
@@ -21,7 +21,7 @@ The goal of this project is to showcase how modern data pipelines can be impleme
 * Streams
 * Tasks
 
----
+
 
 ## Dataset
 
@@ -29,7 +29,7 @@ The dataset contains information about the AI job market, including job roles, s
 
 The data is stored in a CSV file and loaded into Snowflake using a stage and the COPY INTO command.
 
----
+
 
 ## Data Pipeline Architecture
 
@@ -47,7 +47,7 @@ Stream
 ↓
 Task (Automated Updates)
 
----
+
 
 ## Data Processing Steps
 
@@ -58,7 +58,7 @@ Task (Automated Updates)
 5. Use streams to track data changes
 6. Automate updates using scheduled tasks
 
----
+
 
 ## Example Analysis
 
@@ -76,7 +76,7 @@ This query creates a new table called avg_salary_by_country in Snowflake.
 It calculates the average salary for each country from the ai_job_market_clean table using the AVG() function and groups the results by country. 
 The resulting table stores the average salary values for analytical purposes.
 
----
+
 
 ## Project Goals
 
@@ -85,7 +85,7 @@ The resulting table stores the average salary values for analytical purposes.
 * Automate data updates using streams and tasks
 * Analyze trends in the AI job market
 
----
+
 
 ## Author
 
