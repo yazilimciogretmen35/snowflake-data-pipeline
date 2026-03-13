@@ -64,13 +64,17 @@ Task (Automated Updates)
 
 Example query used in the project:
 
-```sql
-SELECT job_title, AVG(salary)
-FROM clean_jobs
-GROUP BY job_title;
+```CREATE OR REPLACE TABLE avg_salary_by_country AS
+SELECT
+    country,
+    AVG(salary) AS avg_salary
+FROM ai_job_market_clean
+GROUP BY country;
 ```
 
-This query calculates the average salary for different AI-related job roles.
+This query creates a new table called avg_salary_by_country in Snowflake. 
+It calculates the average salary for each country from the ai_job_market_clean table using the AVG() function and groups the results by country. 
+The resulting table stores the average salary values for analytical purposes.
 
 ---
 
